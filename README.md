@@ -1,1 +1,0 @@
-# Expertia.ai-Assignment
