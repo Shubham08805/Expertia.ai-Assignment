@@ -3,6 +3,8 @@ import "./SignIn.css"
 import  { useContext, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
+
+
 import { Link } from "react-router-dom";
 
 
@@ -63,7 +65,8 @@ export function SignIn() {
                             <span className=""><input className="signin-input" type="checkbox" name="" id="checkbox" />Remember me</span>
                             <span className="">Forgot Password?</span>
                         </div>
-                        <input className="signin-input" type="submit" value="Login" id="login" />
+                        <button className="signin-input"><Link to="/Home">Login</Link></button>
+                        
                     </form>
                         {showInvalidUser && <>  <h3 style={{color: 'red'}}>you are not a user, please signup first</h3>
                         <input onClick={() => navigate('/signup')} className="signin-input" type="submit" value="Login" id="login"/>
